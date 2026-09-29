@@ -123,6 +123,16 @@ nav.links a:hover{color:var(--white);}
 .hero-stats strong{display:block;font-size:1.6rem;color:var(--white);}
 .hero-stats span{font-size:.8rem;color:#9fb0c3;text-transform:uppercase;letter-spacing:.06em;}
 
+.hero-topbar{
+  position:relative;z-index:3;background:linear-gradient(135deg,var(--orange),var(--orange-2));
+  padding:16px 24px;text-align:center;box-shadow:0 4px 18px rgba(0,0,0,.18);
+}
+.hero-topbar strong{
+  display:inline-block;color:var(--navy);font-weight:900;letter-spacing:.02em;
+  font-size:clamp(1.3rem,3.4vw,2rem);text-transform:uppercase;
+  text-shadow:0 0 14px rgba(255,255,255,.85), 0 0 28px rgba(255,255,255,.5), 0 2px 0 rgba(255,255,255,.4);
+}
+
 /* Hero form (right column) */
 .hero-form{padding:0;}
 .hero-form-head{padding:0 4px 32px;}
