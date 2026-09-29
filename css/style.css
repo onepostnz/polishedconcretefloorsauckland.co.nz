@@ -332,6 +332,30 @@ footer a:hover{color:var(--white);}
   .related-services{grid-template-columns:1fr;}
 }
 
+/* Thanks page */
+.thanks-hero{
+  background:linear-gradient(180deg,var(--navy) 0%, var(--navy-2) 100%);color:var(--white);
+  padding:110px 0 100px;text-align:center;position:relative;overflow:hidden;
+}
+.thanks-hero::after{
+  content:"";position:absolute;left:50%;top:-120px;width:520px;height:520px;transform:translateX(-50%);
+  background:radial-gradient(circle,rgba(248,160,0,.22),transparent 70%);
+}
+.thanks-inner{position:relative;z-index:2;max-width:620px;margin:0 auto;padding:0 24px;}
+.thanks-check{
+  width:74px;height:74px;border-radius:50%;background:linear-gradient(135deg,var(--orange),var(--orange-2));
+  display:flex;align-items:center;justify-content:center;margin:0 auto 28px;box-shadow:0 12px 30px rgba(248,160,0,.35);
+}
+.thanks-check svg{width:36px;height:36px;stroke:#fff;}
+.thanks-hero h1{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:.5em;}
+.thanks-hero p.lead{color:#c3ceda;font-size:1.08rem;max-width:52ch;margin:0 auto 2em;}
+.thanks-next{
+  background:var(--paper);border-radius:var(--radius);padding:28px 32px;margin-top:12px;text-align:left;
+}
+.thanks-next h3{margin-bottom:14px;color:var(--navy);}
+.thanks-next ol{margin:0;padding-left:1.2em;color:var(--muted);font-size:.95rem;display:grid;gap:10px;}
+.thanks-actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:2em;}
+
 /* Legal pages */
 .legal-content h2{font-size:1.35rem;margin-top:1.6em;}
 .legal-content p, .legal-content li{color:var(--muted);}
